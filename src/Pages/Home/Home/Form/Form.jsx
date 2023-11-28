@@ -1,3 +1,4 @@
+import { FaMoneyCheckAlt } from "react-icons/fa";
 
 const Form = () => {
     return (
@@ -5,10 +6,9 @@ const Form = () => {
             <div className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden py-28">
                 <h2 className="text-4xl font-semibold">Wow $0! That's some hefty savings. Drop your email below for a free consultation with our automation experts.</h2>
 
-
                 <div className="pb-12">
-
-                    <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+                    <form>
+                        <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                             <div className="sm:col-span-2 sm:col-start-1">
                                 <label htmlFor="name" className="block text-xl font-medium leading-6 text-[#444444]">
                                     Name
@@ -56,7 +56,13 @@ const Form = () => {
                                     />
                                 </div>
                             </div>
-                    </div>
+                        </div>
+                        <div className="mt-6">
+                            <button type="submit" className="btn btn-ghost text-[#00876D] border-b-4 px-6 border-[#00876D] hover:bg-[#00876D] hover:text-white text-xl">
+                            Start saving!
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
