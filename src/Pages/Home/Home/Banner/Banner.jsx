@@ -35,22 +35,22 @@ const Banner = () => {
                             <p className="text-xl">Drag the pointer to match your monthly invoice count.</p>
                         </div>
                     </div>
-                    <div className="lg:flex rounded-xl bg-white text-black shadow-2xl">
+                    <div className="xl:flex rounded-xl bg-white text-black shadow-2xl">
                         <div>
-                        <figure><img src={drug} className="w-14 mx-8 mt-8 xl:mx-12" alt="drug"/></figure>
+                        <figure><img src={calculator} className="w-14 mx-8 mt-8 xl:mx-12" alt="drug"/></figure>
                         </div>
                         <div className="card-body">
-                            <h2 className="font-semibold text-3xl text-[#007957]">Step 1</h2>
-                            <p className="text-xl">Drag the pointer to match your monthly invoice count.</p>
+                            <h2 className="font-semibold text-3xl text-[#007957]">Step 2</h2>
+                            <p className="text-xl">Use our calculated manual invoice cost or enter your own.</p>
                         </div>
                     </div>
-                    <div className="lg:flex rounded-xl bg-white text-black shadow-2xl">
+                    <div className="xl:flex rounded-xl bg-white text-black shadow-2xl">
                         <div>
-                        <figure><img src={drug} className="w-14 mx-8 mt-8 xl:mx-12" alt="drug"/></figure>
+                        <figure><img src={network} className="w-14 mx-8 mt-8 xl:mx-12" alt="drug"/></figure>
                         </div>
                         <div className="card-body">
-                            <h2 className="font-semibold text-3xl text-[#007957]">Step 1</h2>
-                            <p className="text-xl">Drag the pointer to match your monthly invoice count.</p>
+                            <h2 className="font-semibold text-3xl text-[#007957]">Step 3</h2>
+                            <p className="text-xl">Marvel at the cost savings and get in touch to get started.</p>
                         </div>
                     </div>
                 </div>
