@@ -1,5 +1,6 @@
 import Banner from "./Banner/Banner";
 import Calculator from "./Calculator/Calculator";
+import Faq from "./Faq/Faq";
 import Form from "./Form/Form";
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
             <Banner></Banner>
             <Calculator></Calculator>
             <Form></Form>
+            <Faq></Faq>
         </div>
     );
 };

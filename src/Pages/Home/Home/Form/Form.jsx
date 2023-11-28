@@ -3,7 +3,7 @@ import { FaMoneyCheckAlt } from "react-icons/fa";
 const Form = () => {
     return (
         <div className="bg-[#F4F4F4] text-[#444444]">
-            <div className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden py-28">
+            <div className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden pt-28 pb-14">
                 <h2 className="text-4xl font-semibold">Wow $0! That's some hefty savings. Drop your email below for a free consultation with our automation experts.</h2>
 
                 <div className="pb-12">
