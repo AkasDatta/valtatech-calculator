@@ -11,7 +11,7 @@ const Navbar = () => {
     };
 
     return (
-        <div className="bg-[#009f72] text-white shadow">
+        <div className="bg-[#009f72] text-white">
             <nav className="p-3 md:flex md:items-center md:justify-between max-w-screen-2xl mx-auto lg:px-24 md:px-4 overflow-x-hidden py-12">
                 <div className="flex justify-between items-center">
                     <Link to="/">
