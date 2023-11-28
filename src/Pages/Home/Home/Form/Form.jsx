@@ -58,8 +58,8 @@ const Form = () => {
                             </div>
                         </div>
                         <div className="mt-6">
-                            <button type="submit" className="btn btn-ghost text-[#00876D] border-b-4 px-6 border-[#00876D] hover:bg-[#00876D] hover:text-white text-xl">
-                            Start saving!
+                            <button type="submit" className="btn btn-ghost text-[#00876D] border-b-4 px-6 pt-6 pb-12 xl:px-16 xl:pt-9 xl:pb-16 border-[#00876D] hover:bg-[#00876D] hover:text-white text-xl">
+                            <FaMoneyCheckAlt className="me-2"></FaMoneyCheckAlt> Start saving!
                             </button>
                         </div>
                     </form>
