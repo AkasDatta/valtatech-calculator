@@ -12,3 +12,26 @@
 .group:hover .hoverLine {
     width: 18px; /* Expanded width on hover */
 }
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon {
+    transition: transform 0.5s ease-in-out;
+}
+
+.icon-container.hovered .icon {
+    animation: zoomInOut 1s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+}
