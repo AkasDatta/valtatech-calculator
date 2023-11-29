@@ -3,45 +3,40 @@
 const Footer = () => {
     return (
         <div className="bg-[#1E1E1E] text-white">
-            <footer className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden pb-12">
+            <footer className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden pb-12 pt-20">
                 <div className="">
                     <div className="lg:flex lg:items-start lg:gap-8">
 
                     <div
                         className="grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"
                     >
-                        <div className="col-span-1 sm:col-span-1">
-                            <p className="font-bold text-gray-900">Explore</p>
+                        <div className="col-span-1 sm:col-span-1 mt-8 border-t border-gray-300 pt-8">
+                            <p className="font-bold text-gray-400">Explore</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Home
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    Colleges
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
+                                    Projects
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    Admission
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
+                                    Insights
                                 </a>
                                 </li>
 
-                                <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    My College
-                                </a>
-                                </li>
                             </ul>
                         </div>
 
                         <div className="col-span-1 sm:col-span-1">
-                            <p className="font-bold text-gray-900">Services</p>
+                            <p className="font-bold text-gray-400">Services</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
@@ -70,7 +65,7 @@ const Footer = () => {
                         </div>
 
                         <div className="col-span-1 sm:col-span-1">
-                            <p className="font-bold text-gray-900">About CampusGo University Website</p>
+                            <p className="font-bold text-gray-400">About CampusGo University Website</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <p className="text-gray-600">
