@@ -1,4 +1,4 @@
-import { FaFacebook } from "react-icons/fa";
+import { FaFacebook, FaFacebookF, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -120,11 +120,28 @@ const Footer = () => {
                                     <a href="#" className="text-gray-300 transition hover:text-[#068A66]">Google Map</a>
                                 </li>
 
-                                <li>
-                                    <button className="bg-white text-black text-2xl duration-500 p-2 hover:bg-gray-100 rounded-full">
-                                        <FaFacebook></FaFacebook>
-                                    </button>
-                                </li>
+                                <div className="flex gap-6">
+                                    <li>
+                                        <button className="bg-gray-700 text-white text-2xl duration-500 p-3 hover:bg-gray-300 hover:text-black rounded-full">
+                                            <FaFacebookF></FaFacebookF>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button className="bg-gray-700 text-white text-2xl duration-500 p-3 hover:bg-gray-300 hover:text-black  rounded-full">
+                                            <FaTwitter></FaTwitter>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button className="bg-gray-700 text-white text-2xl duration-500 p-3 hover:bg-gray-300 hover:text-black  rounded-full">
+                                            <FaYoutube></FaYoutube>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button className="bg-gray-700 text-white text-2xl duration-500 p-3 hover:bg-gray-300 hover:text-black  rounded-full">
+                                            <FaLinkedin></FaLinkedin>
+                                        </button>
+                                    </li>
+                                </div>
 
                             </ul>
                         </div>
