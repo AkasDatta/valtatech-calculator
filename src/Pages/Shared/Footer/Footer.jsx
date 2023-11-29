@@ -149,8 +149,8 @@ const Footer = () => {
                     </div>
 
                     <div className="mt-8 border-t border-gray-300 pt-8">
-                    <div className="sm:flex sm:justify-between">
-                        <p className="text-xs text-gray-400">
+                    <div className="lg:flex sm:justify-between">
+                        <p className="text-xs text-gray-400 mb-4">
                         &copy; VALTATECH Business Innovation New Zealand Limited.
                         </p>
 
