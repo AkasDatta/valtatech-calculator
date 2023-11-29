@@ -8,9 +8,9 @@ const Footer = () => {
                     <div className="lg:flex lg:items-start lg:gap-8">
 
                     <div
-                        className="grid grid-cols-2 gap-8 lg:mt-0 lg:grid-cols-5 lg:gap-y-16"
+                        className="grid grid-cols-3 gap-8 lg:mt-0 lg:grid-cols-3 lg:gap-y-16"
                     >
-                        <div className="col-span-1 sm:col-span-1 mt-8 border-t border-gray-300 pt-8">
+                        <div className="mt-8 border-t border-gray-300 pt-8">
                             <p className="font-bold text-gray-400">Explore</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
@@ -35,36 +35,61 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="col-span-1 sm:col-span-1">
-                            <p className="font-bold text-gray-400">Services</p>
+                        <div className="mt-8 border-t border-gray-300 pt-8">
+                            <p className="font-bold text-gray-400">Solutions</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
                                 <li>
                                 <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    Become a Teacher
+                                    Purchasing & Accounts Payable Automation
                                 </a>
                                 </li>
 
                                 <li>
                                 <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    Privacy Policy
+                                    Accounts Receivable Automation
                                 </a>
                                 </li>
 
                                 <li>
                                 <a href="#" className="text-blue-800 transition hover:opacity-75">
-                                    Blog
+                                    Microsoft Power Platform
                                 </a>
                                 </li>
                                 <li>
                                 <a href="#" className="text-blue-800 transition hover:opacity-70">
-                                    Our Teachers
+                                    Enterprise Content Services
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                    Intelligent Automation & Robotic Process Automation
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                    Order Management Automation
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                    Document Generation & Digital Signing
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                    Contract Analytics & Lifecycle Management
+                                </a>
+                                </li>
+                                <li>
+                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                    Business Process Outsourcing & Digitisation
                                 </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="col-span-1 sm:col-span-1">
+                        <div className="">
                             <p className="font-bold text-gray-400">About CampusGo University Website</p>
 
                             <ul className="mt-6 space-y-4 text-sm">
