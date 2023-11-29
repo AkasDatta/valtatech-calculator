@@ -1,3 +1,4 @@
+import { FaFacebook } from "react-icons/fa";
 
 
 const Footer = () => {
@@ -8,12 +9,12 @@ const Footer = () => {
                     <div className="lg:flex lg:items-start lg:gap-8">
 
                     <div
-                        className="grid grid-cols-3 gap-8 lg:mt-0 lg:grid-cols-3 lg:gap-y-16"
+                        className="grid lg:grid-cols-6 gap-8 lg:mt-0 lg:gap-y-16 text-2xl"
                     >
-                        <div className="mt-8 border-t border-gray-300 pt-8">
+                        <div className="mt-8 border-t border-gray-300 pt-8 col-span-1">
                             <p className="font-bold text-gray-400">Explore</p>
 
-                            <ul className="mt-6 space-y-4 text-sm">
+                            <ul className="mt-6 space-y-4 text-lg">
                                 <li>
                                 <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Home
@@ -35,66 +36,96 @@ const Footer = () => {
                             </ul>
                         </div>
 
-                        <div className="mt-8 border-t border-gray-300 pt-8">
+                        <div className="mt-8 border-t border-gray-300 pt-8 col-start-2 col-span-4">
                             <p className="font-bold text-gray-400">Solutions</p>
 
-                            <ul className="mt-6 space-y-4 text-sm">
+                            <ul className="mt-6 space-y-4 text-lg">
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Purchasing & Accounts Payable Automation
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Accounts Receivable Automation
                                 </a>
                                 </li>
 
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-75">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Microsoft Power Platform
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Enterprise Content Services
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Intelligent Automation & Robotic Process Automation
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Order Management Automation
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Document Generation & Digital Signing
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Contract Analytics & Lifecycle Management
                                 </a>
                                 </li>
                                 <li>
-                                <a href="#" className="text-blue-800 transition hover:opacity-70">
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
                                     Business Process Outsourcing & Digitisation
                                 </a>
                                 </li>
                             </ul>
                         </div>
 
-                        <div className="">
-                            <p className="font-bold text-gray-400">About CampusGo University Website</p>
+                        <div className="mt-8 border-t border-gray-300 pt-8 col-span-1">
+                            <p className="font-bold text-gray-400">Contact</p>
 
-                            <ul className="mt-6 space-y-4 text-sm">
-                                <p className="text-gray-600">
-                                    CampusGo is a comprehensive university website providing easy access to academic resources and campus information for students and faculty.</p>
+                            <ul className="mt-6 space-y-4 text-lg">
+                                <li>
+                                <a href="#" className="text-gray-300">
+                                    +64 9 356 4200
+                                </a>
+                                </li>
+
+                                <li>
+                                <a href="#" className="text-gray-300 transition hover:text-[#068A66]">
+                                    Email us
+                                </a>
+                                </li>
+
+                                <li>
+                                <p className="text-gray-300">
+                                Address: <br />
+                                1-5 Nugent Street <br />
+                                Grafton <br />
+                                Auckland 1023 <br />
+                                New Zealand
+                                </p>
+                                </li>
+                                
+                                <li>
+                                    <a href="#" className="text-gray-300 transition hover:text-[#068A66]">Google Map</a>
+                                </li>
+
+                                <li>
+                                    <button className="bg-white text-black text-2xl duration-500 p-2 hover:bg-gray-100 rounded-full">
+                                        <FaFacebook></FaFacebook>
+                                    </button>
+                                </li>
+
                             </ul>
                         </div>
                     </div>
