@@ -4,13 +4,16 @@
 
 .circle {
   position: absolute;
-  width: 120px;
-  height: 120px;
-  background-color: #3498db;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 340px;
+  height: 340px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 220px;
 }
 
 .number {
