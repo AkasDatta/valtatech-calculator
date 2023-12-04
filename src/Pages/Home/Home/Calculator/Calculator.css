@@ -1,21 +1,22 @@
-/* Default styles */
+.circle-container {
+  position: relative;
+}
 
-.circle-slider-container {
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background-color: #3498db;
+  border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-/* Responsive styles */
-
-@media screen and (max-width: 768px) {
-  .border-2 {
-    width: 55%; /* Adjust the width for smaller screens */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .border-2 {
-    border: none; /* Further adjust the width for even smaller screens */
-  }
+.number {
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  transform: translate(-50%, -50%);
 }
