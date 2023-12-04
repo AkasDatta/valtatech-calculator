@@ -2,14 +2,12 @@ import { FaArrowsLeftRight } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 import CircularSlider from "@fseehawer/react-circular-slider";
 import './Calculator.css';
+import image from "../../../../assets/numbering.png"
 
 const Calculator = () => {
   const [initialCost, setInitialCost] = useState(6);
   const [numberOfInvoices, setNumberOfInvoices] = useState(0);
   const [result, setResult] = useState(0);
-  const numberOfPoints = 10;
-  const radius = 120; // Increase the radius for a larger circle
-  const center = { x: 60, y: 60 };
 
   const calculateSavings = () => {
     return (initialCost - 3) * numberOfInvoices + numberOfInvoices * 0.01;
@@ -19,46 +17,53 @@ const Calculator = () => {
     setResult(calculateSavings());
   }, [initialCost, numberOfInvoices]);
 
-  const calculatePointPosition = (index) => {
-    const startingAngle = -90;
-    const angle = ((index * (360 / numberOfPoints)) + startingAngle) * (Math.PI / 180);
-    const x = center.x + radius * Math.cos(angle);
-    const y = center.y + radius * Math.sin(angle);
-    return { x, y };
-  };
-
   return (
-    <div className="bg-[#009f72] text-white">
+    <div id="circle-section" className="calculator-container">
+      <div className="bg-image">
+        <img src={image} alt="" />
+      </div>
+
       <div className="max-w-screen-2xl mx-auto lg:px-24 md:px-5 px-5 overflow-x-hidden py-12 text-center">
         <h2 className="text-2xl">Average Invoice Processing<br /> Cost ($SGD)</h2>
-        <input onChange={e => setInitialCost(e.target.value)} type="number" value={initialCost} placeholder="6" className="rounded-md border-b-4 py-1.5 text-[#fff] text-center text-2xl font-bold bg-[#009f72] shadow-sm ring-0 ring-inset ring-[#009f72] placeholder:text-[#fff] focus:ring-none focus:ring-[#fff] sm:leading-10 mb-6" />
-
-        <div className="border-2 mx-auto w-80 h-auto p-3 rounded-full circle-slider-container">
+        <input onChange={e => setInitialCost(e.target.value)} type="number" value={initialCost} placeholder="6" className="rounded-md border-b-4 py-1.5 text-[#fff] text-center text-2xl font-bold bg-[#009f72] shadow-sm ring-0 ring-inset ring-[#009f72] placeholder:text-[#fff] focus:ring-none focus:ring-[#fff] sm:leading-10" />
+        <div className="border-2 mx-auto w-64 h-auto p-3 rounded-full mt-28 circle-slider-container">
           <div className="circle-slider-outer">
-                <CircularSlider
-                    label="savings"
-                    min={0}
-                    max={10000}
-                    dataIndex={0}
-                    prependToValue="$"
-                    appendToValue="K"
-                    labelColor="#fff"
-                    labelBottom={true}
-                    knobColor="#eeeeee"
-                    knobSize={72}
-                    progressColorFrom="#fff"
-                    progressColorTo="#fff"
-                    progressSize={5}
-                    trackColor="#eeeeee"
-                    trackSize={5}
-                    continuous={{interval:100}}
-                    onChange={ value => { setNumberOfInvoices(value)} }
-                >
-                    <FaArrowsLeftRight className="text-2xl text-black" x='24' y='24' width='32px' height='32px' />
-                </CircularSlider>
+            <CircularSlider
+              label="If counted"
+              min={0}
+              width={220}
+              max={10000}
+              dataIndex={0}
+            //   prependToValue="$"
+            //   appendToValue="K"
+              labelColor="#fff"
+              labelBottom={true}
+              knobColor="#eeeeee"
+              knobSize={52}
+              progressColorFrom="#fff"
+              progressColorTo="#fff"
+              progressSize={5}
+              trackColor="#eeeeee"
+              trackSize={5}
+              continuous={{ interval: 100 }}
+              onChange={value => { setNumberOfInvoices(value) }}
+            >
+              <FaArrowsLeftRight className="text-xl text-black" x='16' y='16' width='24px' height='24px' />
+            </CircularSlider>
           </div>
         </div>
-        <h1 className="m-28">{result}</h1>
+        <div className=" text-white lg:mt-3 md:mt-2 sm:mt-2">
+            <h2 className="lg:mt-2 md:mt-2 mt-0">INVOICES A MONTH AUTOMATED <br /> WITH FUJIFILM CAN SAVE:</h2>
+            <h1 className="font-bold text-4xl">
+            <span className="text-xl">$</span>{result}</h1>
+            <h2>EACH MONTH</h2>
+        </div>
+        <div className=" text-white">
+            <h2 className="lg:pt-2 md:pt-2 pt-1">THAT'S</h2>
+            <h1 className="font-bold text-4xl">
+            <span className="text-xl">$</span>{result * 12}</h1>
+            <h2>EACH YEAR</h2>
+        </div>
       </div>
     </div>
   );
