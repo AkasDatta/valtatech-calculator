@@ -63,7 +63,7 @@ const Banner = () => {
                     </div>
                 </div>
 
-                <div className="text-center p-6">
+                <div className="text-center p-3">
                     <div
                         className={`icon-container ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleHover}

@@ -1,0 +1,12 @@
+.responsive-slider {
+    width: 100%; /* Default width for small devices */
+  
+    @media (min-width: 640px) {
+      width: 300px; /* Adjust for medium devices */
+    }
+  
+    @media (min-width: 768px) {
+      width: 400px; /* Adjust for large devices */
+    }
+  }
+  
