@@ -1,4 +1,7 @@
 /* Default styles */
+.circle-slider-outer{
+  transform: rotate(-180);
+}
 
 .circle-slider-container {
   display: flex;
