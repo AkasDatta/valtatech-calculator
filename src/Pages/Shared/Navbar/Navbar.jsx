@@ -27,7 +27,7 @@ const Navbar = () => {
                 </div>
 
                 <div className={`md:flex md:items-center z-[+1] md:z-auto md:static absolute w-full right-0 md:w-auto md:py-0 py-4 md:pr-7 pr-0 md:opacity-100 ${menuOpen ? 'opacity-100 top-[80px]' : 'opacity-0 top-[-400px]'} transition-all ease-in duration-500`}>
-                    <ul className="md:flex md:items-center ml-auto">
+                    <ul className="md:flex md:items-center ml-auto bg-[#009f72]">
                         <li className="mx-4 lg:mx-8 my-3 md:my-0">
                             <Link to="/" className="text-xl font-semibold duration-600">
                                 Solutions
